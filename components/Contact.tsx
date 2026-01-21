@@ -1,4 +1,17 @@
 import React from "react";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
+import { Textarea } from "./ui/textarea";
 
 const Contact = () => {
   return (
@@ -16,7 +29,76 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="flex flex-col p-6 bg-[#1A1A1A] mx-auto rounded-xl border border-gray-300/20"></div>
+      <div className="flex flex-col p-6 bg-[#1A1A1A] mx-auto rounded-xl border border-gray-300/20 gap-6">
+        <div className="flex gap-8">
+          <div className="flex flex-col gap-2">
+            <Label className="text-white font-medium text-sm">Name</Label>
+            <Input
+              type={"text"}
+              className="text-white w-xs bg-[#1A1A1A] border border-gray-300/20"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <Label className="text-white font-medium text-sm">Email</Label>
+            <Input
+              type={"email"}
+              className="text-white w-xs [#1A1A1A] border border-gray-300/20"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col gap-2">
+          <Label className="text-white font-medium text-sm">Project Type</Label>
+          <Select>
+            <SelectTrigger className="w-full bg-[#1A1A1A] text-white border border-gray-300/20">
+              <SelectValue
+                className="text-white font-medium text-sm"
+                placeholder="Select Project Type"
+              />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup className="bg-black border border-gray-300/20">
+                <SelectItem
+                  value="apple"
+                  className="text-white font-medium text-sm"
+                >
+                  Feature Film
+                </SelectItem>
+                <SelectItem
+                  value="banana"
+                  className="text-white font-medium text-sm"
+                >
+                  Short Film
+                </SelectItem>
+                <SelectItem
+                  value="blueberry"
+                  className="text-white font-medium text-sm"
+                >
+                  Documentary
+                </SelectItem>
+                <SelectItem
+                  value="grapes"
+                  className="text-white font-medium text-sm"
+                >
+                  Commercial
+                </SelectItem>
+                <SelectItem
+                  value="pineapple"
+                  className="text-white font-medium text-sm"
+                >
+                  Other
+                </SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+        <div className="flex flex-col gap-2">
+          <Label className="text-white font-medium text-sm">Project Details</Label>
+          <Textarea className="text-white font-medium text-sm h-25 bg-[#1A1A1A] border border-gray-300/20" />
+        </div>
+        <div className="flex justify-center items-center">
+            <Button className=" bg-[#1A1A1A] border border-[#D4AF38] rounded-lg text-white font-semibold cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105">Send Message</Button>
+        </div>
+      </div>
     </div>
   );
 };
