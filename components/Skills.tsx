@@ -63,7 +63,7 @@ const Skills = () => {
         {services.map(({ icon: Icon, title, description }, index) => (
           <div
             key={index}
-            className="flex flex-col gap-3 border border-gray-400 hover:border-[#D4AF38] transition-colors duration-300 ease-in-out w-full h-full p-6 rounded-md"
+            className="flex flex-col gap-3 border border-gray-400/30 hover:border-[#D4AF38] transition-colors duration-300 ease-in-out w-full h-full p-6 rounded-md"
           >
             <div className="flex bg-[#3F3415] items-center justify-start w-10 h-10 rounded-full border border-[#D4AF38] p-2">
               <Icon color="#D4AF38" />

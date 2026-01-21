@@ -26,7 +26,7 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-8">
-        <Card className="relative w-full max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
@@ -66,7 +66,7 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
@@ -106,7 +106,7 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
@@ -146,7 +146,7 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
@@ -186,7 +186,7 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full max-w-sm pt-0 rounded-2xl border border-[#D4AF38]"> 
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]"> 
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
@@ -226,7 +226,7 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
