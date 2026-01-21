@@ -4,10 +4,8 @@ import Skills from "@/components/Skills";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
-const Contact = () => {
+const HomePage = () => {
   const backgroundRef = useRef<HTMLDivElement | null>(null);
-
-
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -21,6 +19,12 @@ const Contact = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     if (!backgroundRef.current) return;
     backgroundRef.current.appendChild(renderer.domElement);
+
+    renderer.domElement.style.position = "absolute";
+    renderer.domElement.style.top = "0";
+    renderer.domElement.style.left = "0";
+    renderer.domElement.style.zIndex = "0";
+    renderer.setPixelRatio(window.devicePixelRatio);
 
     const starGeometry = new THREE.BufferGeometry();
     const starCount = 1000;
@@ -91,30 +95,29 @@ const Contact = () => {
   return (
     <>
       <div
-      ref={backgroundRef}
-      className="relative w-screen h[-300px] lg:h-screen overflow-hidden"
-
-    >
-      <div
-        id="contact"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center items-center z-5 w-screen md:px-20 px-5"
+        ref={backgroundRef}
+        className="relative w-screen h-75 lg:h-screen overflow-hidden"
       >
-        <div className="flex flex-col justify-center items-center gap-2 lg:gap-4 padding-x-lg">
-          <h1 className="capitalize text-xl md:text-3xl lg:text-6xl text-white">
-            HI, MY NAME IS <span className="text-[#D4AF38]">DANIEL ALAUKWU.</span>
-          </h1>
-          <h4 className="max-w-4xl text-sm md:text-xl text-center text-white font-2xl">
-            I am an Assistant Director[A.D] with over 3+ years of professional experience
-            collaborating with directors, cinematographers, and production crews
-            to bring extraordinary stories to life on screen.
-          </h4>
+        <div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 justify-center items-center z-10 w-screen md:px-20 px-5"
+        >
+          <div className="flex flex-col justify-center items-center gap-2 lg:gap-4 padding-x-lg">
+            <h1 className="capitalize text-xl md:text-3xl lg:text-6xl text-white">
+              HI, MY NAME IS{" "}
+              <span className="text-[#D4AF38]">DANIEL ALAUKWU.</span>
+            </h1>
+            <h4 className="max-w-4xl text-sm md:text-xl text-center text-white font-2xl">
+              I am an Assistant Director[A.D] with over 3+ years of professional
+              experience collaborating with directors, cinematographers, and
+              production crews to bring extraordinary stories to life on screen.
+            </h4>
+          </div>
         </div>
       </div>
-    </div>
-    <About />
-    <Skills />
+      <About />
+      <Skills />
     </>
   );
 };
 
-export default Contact;
+export default HomePage;
