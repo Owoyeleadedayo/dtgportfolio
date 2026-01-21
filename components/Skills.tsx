@@ -48,7 +48,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="flex flex-col bg-black/80 py-10 md:py-20 px-12 gap-8">
+    <div className="flex flex-col bg-black py-10 md:py-20 px-12 gap-8">
       <div className="flex flex-col justify-center items-center gap-2">
         <p className="text-2xl md:text-4xl font-bold text-[#D4AF38] capitalize text-center">
           Skills & Expertise
