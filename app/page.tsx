@@ -2,14 +2,17 @@
 import StarBackground from "@/components/StarBackground";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Approach from "@/components/Approach";
+import Contact from "@/components/Contact";
 
 const HomePage = () => {
   return (
     <>
       <StarBackground className="relative w-screen h-screen overflow-hidden bg-black" />
       
-      <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen md:px-20 px-5 flex flex-col items-center justify-center gap-4">
-        <h1 className="text-white text-4xl lg:text-6xl">
+      <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen md:px-20 px-8 flex flex-col items-center justify-center gap-4">
+        <h1 className="text-white text-center text-4xl lg:text-6xl">
           HI, MY NAME IS <span className="text-[#D4AF38]">DANIEL ALAUKWU.</span>
         </h1>
         <h4 className="text-white text-center max-w-4xl">
@@ -19,6 +22,9 @@ const HomePage = () => {
 
       <About />
       <Skills />
+      <Projects />
+      <Approach />
+      <Contact />
     </>
   );
 };

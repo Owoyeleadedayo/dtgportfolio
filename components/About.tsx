@@ -5,7 +5,7 @@ import AnimatedCounter from "./AnimatedCounter";
 const About = () => {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 px-12 bg-[#1A1A1A] w-screen py-10 md:py-20 justify-between items-center gap-20">
+      <div id="about" className="grid grid-cols-1 lg:grid-cols-2 px-8 md:px-8 lg:px-25 bg-[#1A1A1A] w-screen lg:h-screen py-10 md:py-20 justify-between items-center gap-30">
         <div className="flex flex-col gap-2 md:gap-4">
           <p className="text-xl md:text-3xl font-bold text-[#D4AF38] capitalize">about</p>
           <div className="flex flex-col gap-4 md:gap-6">
@@ -34,9 +34,14 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-full hidden lg:block">
-            <Image src="/img/dtg.jpeg" alt="profile" fill className="object-cover" />
-        </div>
+        <div className="relative w-[500px] h-[500px] rounded-xl hidden lg:block">
+        <Image
+          src="/img/dtg.jpeg"
+          alt="profile"
+          fill
+          className="object-cover rounded-xl"
+        />
+      </div>
       </div>
     </>
   );

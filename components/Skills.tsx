@@ -48,7 +48,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="flex flex-col bg-black py-10 md:py-20 px-12 gap-8">
+    <div id="expertise" className="flex w-screen h-full lg:h-screen flex-col bg-black py-10 md:py-20 px-8 md:px-8 lg:px-25 gap-8">
       <div className="flex flex-col justify-center items-center gap-2">
         <p className="text-2xl md:text-4xl font-bold text-[#D4AF38] capitalize text-center">
           Skills & Expertise
@@ -65,7 +65,7 @@ const Skills = () => {
             key={index}
             className="flex flex-col gap-3 border border-gray-400 hover:border-[#D4AF38] transition-colors duration-300 ease-in-out w-full h-full p-6 rounded-md"
           >
-            <div className="flex bg-[#7c6938] items-center justify-start w-10 h-10 rounded-full border border-[#D4AF38] p-2">
+            <div className="flex bg-[#3F3415] items-center justify-start w-10 h-10 rounded-full border border-[#D4AF38] p-2">
               <Icon color="#D4AF38" />
             </div>
 
