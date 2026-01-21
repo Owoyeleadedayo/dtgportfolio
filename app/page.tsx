@@ -6,7 +6,7 @@ import Skills from "@/components/Skills";
 const HomePage = () => {
   return (
     <>
-      <StarBackground className="relative w-screen h-screen overflow-hidden" />
+      <StarBackground className="relative w-screen h-screen overflow-hidden bg-black" />
       
       <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen md:px-20 px-5 flex flex-col items-center justify-center gap-4">
         <h1 className="text-white text-4xl lg:text-6xl">

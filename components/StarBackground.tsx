@@ -52,7 +52,7 @@ const StarBackground: React.FC<StarBackgroundProps> = ({ className }) => {
 
     const starMaterial = new THREE.PointsMaterial({
       color: "#fafafa",
-      size: 0.1,
+      size: 0.3 * window.devicePixelRatio,
       sizeAttenuation: true,
     });
 
