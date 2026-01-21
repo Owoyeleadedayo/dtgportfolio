@@ -5,7 +5,9 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 const Contact = () => {
-  const backgroundRef = useRef(null);
+  const backgroundRef = useRef<HTMLDivElement | null>(null);
+
+
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -17,6 +19,7 @@ const Contact = () => {
     );
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
+    if (!backgroundRef.current) return;
     backgroundRef.current.appendChild(renderer.domElement);
 
     const starGeometry = new THREE.BufferGeometry();
