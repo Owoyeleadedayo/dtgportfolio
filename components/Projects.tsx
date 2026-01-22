@@ -26,8 +26,8 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-8">
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
-          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
               src="https://img.youtube.com/vi/tj-IxVFUiJY/hqdefault.jpg"
@@ -53,7 +53,7 @@ const Projects = () => {
           <CardFooter>
             <Button
               asChild
-              className="w-full border border-[#D4AF38] text-white text-base cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
                 href="https://youtu.be/tj-IxVFUiJY"
@@ -66,8 +66,8 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
-          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
               src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg"
@@ -93,7 +93,7 @@ const Projects = () => {
           <CardFooter>
             <Button
               asChild
-              className="w-full border border-[#D4AF38] text-white text-base cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
                 href="https://youtu.be/watch?v=vGjOdwCOQN"
@@ -106,8 +106,8 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
-          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
               src="https://img.youtube.com/vi/4zTeu-jX1pg/hqdefault.jpg"
@@ -133,7 +133,7 @@ const Projects = () => {
           <CardFooter>
             <Button
               asChild
-              className="w-full border border-[#D4AF38] text-white text-base cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
                 href="https://youtu.be/watch?v=4zTeu-jX1pg"
@@ -146,8 +146,8 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
-          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
               src="https://img.youtube.com/vi/HhmiOoYEKTM/hqdefault.jpg"
@@ -173,7 +173,7 @@ const Projects = () => {
           <CardFooter>
             <Button
               asChild
-              className="w-full border border-[#D4AF38] text-white text-base cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
                 href="https://www.youtube.com/watch?v=HhmiOoYEKTM"
@@ -186,8 +186,8 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]"> 
-          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50"> 
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
               src="https://img.youtube.com/vi/6rDBjdBjYCg/hqdefault.jpg"
@@ -213,7 +213,7 @@ const Projects = () => {
           <CardFooter>
             <Button
               asChild
-              className="w-full border border-[#D4AF38] text-white text-base cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
                 href="https://www.youtube.com/watch?v=6rDBjdBjYCg"
@@ -226,8 +226,8 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]">
-          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38] overflow-hidden" />
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
               src="https://img.youtube.com/vi/Za6Cc_7IK20/hqdefault.jpg"
@@ -253,7 +253,7 @@ const Projects = () => {
           <CardFooter>
             <Button
               asChild
-              className="w-full border border-[#D4AF38] text-white text-base cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
                 href="https://www.youtube.com/watch?v=Za6Cc_7IK20"

@@ -6,7 +6,7 @@ import React from "react";
 const Approach = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 w-screen h-full flex-col bg-black py-10 md:py-20 px-8 md:px-8 lg:px-25 gap-30">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col justify-center gap-5">
         <h1 className="text-xl md:text-3xl font-bold text-[#D4AF38] capitalize">
           Collaboration Approach
         </h1>

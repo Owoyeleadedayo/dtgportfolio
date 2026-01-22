@@ -1,46 +1,114 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <nav className="flex w-full justify-between items-center px-8 md:px-8 lg:px-25 py-6 bg-transparent fixed z-20">
-        <p className="text-white text-3xl font-bold uppercase">dtg.</p>
+      {/* Navbar */}
+      <nav
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+        ${scrolled ? "bg-black/90 backdrop-blur-md" : "bg-transparent"}
+        `}
+      >
+        <div className="flex justify-between items-center px-5 md:px-8 lg:px-24 py-5">
+          {/* Logo */}
+          <p className="text-white text-3xl font-bold uppercase">dtg.</p>
 
-        <ul className="hidden md:flex items-center gap-6 ">
-          <li>
-            <a href="#top" className="text-white font-medium text-xl">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="text-white font-medium text-xl">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#expertise" className="text-white font-medium text-xl">
-              Expertise
-            </a>
-          </li>
-          <li>
-            <a href="#projects" className="text-white font-medium text-xl">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="text-white font-medium text-xl">
-              Contact
-            </a>
-          </li>
-        </ul>
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex items-center gap-6">
+            {["Home", "About", "Expertise", "Projects", "Contact"].map(
+              (item) => (
+                <li key={item}>
+                  <a
+                    href={`#${item.toLowerCase()}`}
+                    className="text-white font-medium text-lg hover:text-[#D4AF38] transition"
+                  >
+                    {item}
+                  </a>
+                </li>
+              )
+            )}
+          </ul>
 
-        <div>
-          <Button asChild className="border border-[#D4AF38] rounded-lg text-white font-semibold cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105">
-               <a href="#contact">Work With Me</a>
-          </Button>
+          {/* Desktop Button */}
+          <div className="hidden md:block">
+            <Button
+              asChild
+              className="border border-[#D4AF38]/50 text-white hover:bg-[#D4AF38]/50 transition"
+            >
+              <a href="#contact">Work With Me</a>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Icon */}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setOpen(true)}
+          >
+            <Menu size={28} />
+          </button>
         </div>
       </nav>
+
+      {/* Overlay */}
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/60 z-40"
+          onClick={() => setOpen(false)}
+        />
+      )}
+
+      {/* Side Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-72 bg-black z-50
+        transform transition-transform duration-300 ease-in-out
+        ${open ? "translate-x-0" : "translate-x-full"}
+        `}
+      >
+        <div className="flex justify-between items-center px-6 py-5 border-b border-white/10">
+          <p className="text-white text-2xl font-bold">Menu</p>
+          <button onClick={() => setOpen(false)} className="text-white">
+            <X size={26} />
+          </button>
+        </div>
+
+        <div className="flex flex-col gap-6 px-6 py-8">
+          {["Home", "About", "Expertise", "Projects", "Contact"].map(
+            (item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                onClick={() => setOpen(false)}
+                className="text-white text-lg font-medium hover:text-[#D4AF38]"
+              >
+                {item}
+              </a>
+            )
+          )}
+
+          <Button
+            asChild
+            className="mt-4 border border-[#D4AF38]/50 text-white hover:bg-[#D4AF38]/50"
+          >
+            <a href="#contact">Work With Me</a>
+          </Button>
+        </div>
+      </div>
     </>
   );
 };

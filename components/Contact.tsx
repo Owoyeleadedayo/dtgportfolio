@@ -29,8 +29,8 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="flex flex-col p-6 bg-[#1A1A1A] mx-auto rounded-xl border border-gray-300/20 gap-6">
-        <div className="flex gap-8">
+      <div className="flex flex-col p-6 bg-[#1A1A1A] mx-auto rounded-xl border border-gray-300/20 gap-2 md:gap-6">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <div className="flex flex-col gap-2">
             <Label className="text-white font-medium text-sm">Name</Label>
             <Input
@@ -95,8 +95,13 @@ const Contact = () => {
           <Label className="text-white font-medium text-sm">Project Details</Label>
           <Textarea className="text-white font-medium text-sm h-25 bg-[#1A1A1A] border border-gray-300/20" />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mt-2 md:mt-0">
             <Button className=" bg-[#1A1A1A] border border-[#D4AF38] rounded-lg text-white font-semibold cursor-pointer hover:bg-[#D4AF38] transition-all duration-300 ease-in-out hover:scale-105">Send Message</Button>
+        </div>
+
+        <div className="flex justify-center items-center mt-2 gap-2">
+          <p className="text-white text-sm font-medium">You can also reach out to me on WhatsApp</p>
+          <Button className="text-white text-sm font-medium bg-[#25D366] hover:bg-[#25D366] hover:text-base transition-all ease-in-out hover:scale-105 duration-300 cursor-pointer">Click Me</Button>
         </div>
       </div>
     </div>
