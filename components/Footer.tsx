@@ -1,4 +1,4 @@
-import { Instagram, MailOpen } from "lucide-react";
+import { Instagram, Mail, MailOpen } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
@@ -8,10 +8,18 @@ const Footer = () => {
         <p className="text-white text-3xl font-bold uppercase">dtg.</p>
 
         <div className="flex justify-center items-center gap-3">
-          <Instagram color="#D4AF38" className="cursor-pointer" />
+          <div>
+            <a
+              href="https://www.instagram.com/dhaniel_thegreat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram color="#D4AF38" className="cursor-pointer" />
+            </a>
+          </div>
           <div className="w-6 h-6">
             <a
-              href="https://www.tiktok.com/@username"
+              href="https://www.tiktok.com/dhaniel_thegreat"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#D4AF38]/80"
@@ -28,11 +36,20 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <MailOpen color="#D4AF38" className="cursor-pointer" />
+          <div className="flex items-center">
+            <a
+              href="mailto:scoutedbydhaniel@gmail.com"
+              className="inline-flex items-center"
+            >
+              <Mail color="#D4AF38" size={28} className="cursor-pointer" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="w-full h-px bg-gray-300/20 my-2" />
-      <p className="text-white text-center font-medium text-sm">© All rights reserved.</p>
+      <p className="text-white text-center font-medium text-sm">
+        © All rights reserved.
+      </p>
     </footer>
   );
 };
