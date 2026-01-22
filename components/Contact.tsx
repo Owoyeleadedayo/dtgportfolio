@@ -104,7 +104,7 @@ const Contact = () => {
           </Button>
         </div>
 
-        <div className="flex justify-center items-center mt-2 gap-2">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-2 gap-2">
           <p className="text-white text-sm font-medium">
             You can also reach out to me on WhatsApp
           </p>
