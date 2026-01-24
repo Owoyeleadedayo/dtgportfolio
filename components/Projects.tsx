@@ -70,7 +70,7 @@ const Projects = () => {
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
-              src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg"
+              src="https://img.youtube.com/vi/vGjOdwCOQNQ/hqdefault.jpg"
               alt="Event cover"
               className="aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
             />
@@ -96,7 +96,7 @@ const Projects = () => {
               className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
             >
               <a
-                href="https://youtu.be/watch?v=vGjOdwCOQN"
+                href="https://www.youtube.com/watch?v=vGjOdwCOQNQ"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -158,11 +158,11 @@ const Projects = () => {
 
           <CardHeader>
             <CardTitle className="text-white font-semibold text-2xl">
-            Bloodline Of Grace
+              Bloodline Of Grace
             </CardTitle>
             <div className="flex flex-col gap-2">
               <p className="text-white text-base font-semibold">
-                Music Video | 2025
+                Commercials | 2025
               </p>
               <p className="text-white text-base font-medium">
                 Responsible for daily scheduling and ensuring seamless
@@ -186,7 +186,7 @@ const Projects = () => {
           </CardFooter>
         </Card>
 
-        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50"> 
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
@@ -198,11 +198,11 @@ const Projects = () => {
 
           <CardHeader>
             <CardTitle className="text-white font-semibold text-2xl">
-            TOP TEA NIGERIA
+              TOP TEA NIGERIA
             </CardTitle>
             <div className="flex flex-col gap-2">
               <p className="text-white text-base font-semibold">
-                Music Video | 2025
+                Commercials | 2025
               </p>
               <p className="text-white text-base font-medium">
                 Responsible for daily scheduling and ensuring seamless
@@ -238,11 +238,11 @@ const Projects = () => {
 
           <CardHeader>
             <CardTitle className="text-white font-semibold text-2xl">
-            KIVO CREAMER
+              KIVO CREAMER
             </CardTitle>
             <div className="flex flex-col gap-2">
               <p className="text-white text-base font-semibold">
-                Music Video | 2025
+                Commercials | 2025
               </p>
               <p className="text-white text-base font-medium">
                 Responsible for daily scheduling and ensuring seamless
