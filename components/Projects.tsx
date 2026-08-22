@@ -2,8 +2,6 @@ import React from "react";
 import { Button } from "./ui/button";
 import {
   Card,
-  CardAction,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -57,6 +55,46 @@ const Projects = () => {
             >
               <a
                 href="https://youtu.be/tj-IxVFUiJY"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Event
+              </a>
+            </Button>
+          </CardFooter>
+        </Card>
+
+        <Card className="relative w-full bg-[#1A1A1A] max-w-sm pt-0 rounded-2xl border border-[#D4AF38]/50">
+          <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
+          <div className="overflow-hidden rounded-t-2xl">
+            <img
+              src="https://www.instagram.com/p/Dajwh_yjF2j/?igsh=cTczeWY4M2l0cTZk&igsi=cTczeWY4M2l0cTZk"
+              alt="Event cover"
+              className="aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+            />
+          </div>
+
+          <CardHeader>
+            <CardTitle className="text-white font-semibold text-2xl">
+              WORLD CUP DREAM.
+            </CardTitle>
+            <div className="flex flex-col gap-2">
+              <p className="text-white text-base font-semibold">
+                Commercials | 2026
+              </p>
+              <p className="text-white text-base font-medium">
+                Responsible for daily scheduling and ensuring seamless
+                collaboration between cinematography and sound departments.
+              </p>
+            </div>
+          </CardHeader>
+          <CardFooter>
+            <Button
+              asChild
+              className="w-full border border-[#D4AF38]/50 text-white text-base cursor-pointer hover:bg-[#D4AF38]/40 transition-all duration-300 ease-in-out hover:scale-105"
+            >
+              <a
+                href="https://www.instagram.com/p/Dajwh_yjF2j/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
