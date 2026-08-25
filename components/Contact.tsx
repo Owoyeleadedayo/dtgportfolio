@@ -22,28 +22,28 @@ const Contact = () => {
     >
       <div className="flex flex-col justify-center items-center gap-2">
         <p className="text-2xl md:text-4xl font-bold text-[#D4AF38] capitalize text-center">
-          Let's Create Together
+          Let&apos;s Create Together
         </p>
         <p className="max-w-3xl text-base md:text-xl text-white text-center">
-          Ready to bring your next film project to life? Let's discuss how we
-          can collaborate to create something extraordinary.
+          Ready to bring your next film project to life? Let&apos;s discuss how
+          we can collaborate to create something extraordinary.
         </p>
       </div>
 
-      <div className="flex flex-col p-6 bg-[#1A1A1A] mx-auto rounded-xl border border-gray-300/20 gap-2 md:gap-6">
+      <div className="flex flex-col p-6 bg-[#1A1A1A] rounded-xl border border-gray-300/20 gap-2 md:gap-6">
         <div className="flex flex-col md:flex-row gap-2 md:gap-8">
           <div className="flex flex-col gap-2">
             <Label className="text-white font-medium text-sm">Name</Label>
             <Input
               type={"text"}
-              className="text-white w-xs bg-[#1A1A1A] border border-gray-300/20"
+              className="text-white w-[16.5em] lg:w-xs bg-[#1A1A1A] border border-gray-300/20"
             />
           </div>
           <div className="flex flex-col gap-2">
             <Label className="text-white font-medium text-sm">Email</Label>
             <Input
               type={"email"}
-              className="text-white w-xs [#1A1A1A] border border-gray-300/20"
+              className="text-white w-[16.5em] lg:w-xs [#1A1A1A] border border-gray-300/20"
             />
           </div>
         </div>
