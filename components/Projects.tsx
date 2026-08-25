@@ -68,7 +68,7 @@ const Projects = () => {
           <div className="absolute inset-0 z-30 rounded-t-2xl aspect-video bg-grey/35 border border-[#D4AF38]/50 overflow-hidden" />
           <div className="overflow-hidden rounded-t-2xl">
             <img
-              src="https://www.instagram.com/p/Dajwh_yjF2j/?igsh=cTczeWY4M2l0cTZk&igsi=cTczeWY4M2l0cTZk"
+              src="/img/worldcup.jpeg"
               alt="Event cover"
               className="aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
             />
