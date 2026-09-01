@@ -1,5 +1,4 @@
 "use client";
-import { useRef } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
@@ -8,7 +7,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
@@ -32,18 +30,18 @@ const Contact = () => {
 
       <div className="flex flex-col p-6 bg-[#1A1A1A] rounded-xl border border-gray-300/20 gap-2 md:gap-6">
         <div className="flex flex-col md:flex-row gap-2 md:gap-8">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-1 flex-col gap-2">
             <Label className="text-white font-medium text-sm">Name</Label>
             <Input
               type={"text"}
-              className="text-white w-[16.5em] lg:w-xs bg-[#1A1A1A] border border-gray-300/20"
+              className="text-white w-[16.5em] lg:w-full bg-[#1A1A1A] border border-gray-300/20"
             />
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-1  flex-col gap-2">
             <Label className="text-white font-medium text-sm">Email</Label>
             <Input
               type={"email"}
-              className="text-white w-[16.5em] lg:w-xs [#1A1A1A] border border-gray-300/20"
+              className="text-white w-[16.5em] lg:w-full [#1A1A1A] border border-gray-300/20"
             />
           </div>
         </div>
@@ -105,7 +103,7 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-2 gap-2">
-          <p className="text-white text-sm font-medium">
+          <p className="text-white text-center text-sm md:text-lg font-medium">
             You can also reach out to me on WhatsApp
           </p>
           <Button
